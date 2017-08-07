@@ -1,0 +1,27 @@
+Thanh Le
+August 7, 2017
+C-Programming-A-Modern-Approach-K.N.King - Chaptet 5/Proramming project 1:
+
+Write a program that calculates how many digits a number contains:
+Enter a number: 374 
+The number 374 has 3 digits
+You may assume that the number has no more than four digits.
+
+#include <stdio.h>
+int main (void)
+{
+    int input;
+    
+    printf("Enter a number: ");
+    scanf("%d", &input);
+    
+    if (input >= 0 && input <= 9)
+        printf("The number input has 1 digit\n");
+    else if (input <= 99)
+        printf("The number input has 2 digit\n");
+    else
+        printf("The number input has 3 digit\n");
+
+    return 0;
+    
+}
